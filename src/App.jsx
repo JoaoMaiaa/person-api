@@ -24,12 +24,12 @@ function App() {
       <section>
         <div className="columns">
           <div className="column has-background-black">
-            <div className="container ">
+            <div className="container">
               <section className="section">
-                <h1 className="title is-size-2 has-text-light">Seja muito bem-vindo ao site de nossa empresa</h1>
+                <h1 className="title is-size-2 has-text-light mt-5">Seja muito bem-vindo ao site de nossa empresa</h1>
                 <p class="subtitle is-size-6 mt-5 has-text-grey-light">Somos uma empresa que trabalha com a relação de um belo site com o seu negócio.</p>
                 <a href="#" className="button is-light">Ver mais</a>
-             </section>
+              </section>
             </div>
           </div>
           <div className="column p-0 is-hidden-mobile is-flex-tablet">
@@ -37,31 +37,115 @@ function App() {
           </div>
         </div>
       </section>
-      <section>      
+      <section>
         <div className="columns pb-5 mb-5">
           <div className="column">
             <div className="container">
-            <section className="section">
-              <h2 className="h2 is-size-3 has-text-center has-text-black">Favorecemos sua empresa</h2>
-              <p classname="mt-5 ">Aqui sua empresa é prioridade na exposição e credibilidade da sua empresa</p>
-            </section>
-            <section class="section mt-5 pt-5"></section>
-            </div>          
-          </div>
-        </div>
-      </section>
-      <section>
-        <div className="columns">
-          <div className="column">
-            <div className="container">
-              <section className="section has-background-black">
-              <h2 className="h2 title has-text-grey-light has-text-centered">O que fazemos?</h2>
+              <section className="section">
+                <h2 className="h2 is-size-3 has-text-center has-text-black">Favorecemos sua empresa</h2>
+                <p classname="mt-5 ">Aqui sua empresa é prioridade na exposição e credibilidade da sua empresa</p>
               </section>
+              <section class="section mt-5 pt-5"></section>
             </div>
           </div>
         </div>
       </section>
-      
+      <section className="">
+        <div className="columns">
+          <div className="column">
+            <section className="section hero has-background-black">
+              <h2 className="h2 title has-text-grey-light has-text-centered">O que fazemos?</h2>
+            </section>
+          </div>
+        </div>
+      </section>
+      <section>
+        <div className="columns pt-0">
+          <div className="column is-8 pt-0">
+            <div className="columns">
+              <div className="column is-12">
+                <div className="container">
+                  <section className="section hero has-background-success">
+                    <div className="card has-background-light">
+                      <div className="card-header">
+                        <div className="card-header-title">
+                          <p className="is-size-4 has-text-weight-bold has-text-dark">Landing page</p>
+                        </div>
+                      </div>
+                      <div className="card-content">
+                        <ul>
+                          <li>Pensado para celular</li>
+                          <li className="my-2">Prioridade de conteúdo</li>
+                          <li>Leve e rápido</li>
+                        </ul>
+                      </div>
+                      <div className="card-header-title">
+                        <p className="is-size-4 has-text-weight-bold has-text-dark">Para</p>
+                      </div>
+                      <div className="card-content">
+                        <ul>
+                          <li>Prestadores de serviço</li>
+                          <li className="my-2">Instituições</li>
+                          <li>Negócios locais e digitais</li>
+                        </ul>
+                      </div>
+                      <div className="card-footer">
+                        <a href="#" className="button is-dark mx-auto mb-5">
+                          Fale conosco
+                        </a>
+                      </div>
+                    </div>
+                  </section>
+                </div>
+              </div>
+            </div>
+            <div className="columns">
+              <div className="column is-12">
+                <div className="container">
+                  <section className="section hero has-background-dark">
+                    <div className="card has-background-dark">
+                      <div className="card-header">
+                        <div className="card-header-title">
+                          <p className="is-size-4 has-text-weight-bold has-text-light">Single page application</p>
+                        </div>
+                      </div>
+                      <div className="card-content">
+                        <ul class="has-text-light">
+                          <li>Pensado para celular</li>
+                          <li className="my-2">Prioridade de conteúdo</li>
+                          <li>Leve e rápido</li>
+                        </ul>
+                      </div>
+                      <div className="card-header-title">
+                        <p className="is-size-4 has-text-weight-bold has-text-light">Para</p>
+                      </div>
+                      <div className="card-content">
+                        <ul className="has-text-light">
+                          <li>Prestadores de serviço</li>
+                          <li className="my-2">Instituições</li>
+                          <li>Negócios locais e digitais</li>
+                        </ul>
+                      </div>
+                      <div className="card-footer" style={{ border: 0 }}>
+                        <a href="#" className="button is-success mx-auto mb-5">
+                          Fale conosco
+                        </a>
+                      </div>
+                    </div>
+                  </section>
+                </div>
+
+              </div>
+            </div>
+          </div>
+          <div className="column p-0 is-hidden-mobile is-flex-tablet">
+            <div className="container">
+              <img src={job} style={{ height: 99 + '%' }} alt="" srcset="" />
+            </div>
+          </div>
+        </div>
+      </section>
+
     </Fragment>
   )
 }
