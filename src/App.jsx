@@ -2,6 +2,7 @@ import { useState, useEffect, Fragment } from 'react'
 import api from './services/api'
 import Navbar from './components/navbar'
 import job from '../assets/images/job.jpg'
+import startup from '../assets/images/startup.jpg'
 
 function App() {
   const [film, setFilm] = useState([])
@@ -18,7 +19,7 @@ function App() {
 
   return (
     <Fragment>
-      <div className="">
+      <div>
         <Navbar />
       </div>
       <section>
@@ -43,14 +44,14 @@ function App() {
             <div className="container">
               <section className="section">
                 <h2 className="h2 is-size-3 has-text-center has-text-black">Favorecemos sua empresa</h2>
-                <p classname="mt-5 ">Aqui sua empresa é prioridade na exposição e credibilidade da sua empresa</p>
+                <p classname="mt-5">Aqui sua empresa é prioridade na exposição e credibilidade da sua empresa</p>
               </section>
               <section class="section mt-5 pt-5"></section>
             </div>
           </div>
         </div>
       </section>
-      <section className="">
+      <section>
         <div className="columns">
           <div className="column">
             <section className="section hero has-background-black">
@@ -134,13 +135,13 @@ function App() {
                     </div>
                   </section>
                 </div>
-
               </div>
             </div>
           </div>
           <div className="column p-0 is-hidden-mobile is-flex-tablet">
             <div className="container">
-              <img src={job} style={{ height: 99 + '%' }} alt="" srcset="" />
+              <img src={job} style={{ height: 48.5 + '%' }} alt="" srcset="" />
+              <img src={startup} style={{ height: 48.5 + '%' }} className="mt-4" alt="" srcset="" />            
             </div>
           </div>
         </div>
