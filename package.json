@@ -10,6 +10,7 @@
   "dependencies": {
     "axios": "^0.26.1",
     "bulma": "^0.9.3",
+    "lodash-es": "^4.17.21",
     "react": "^17.0.2",
     "react-dom": "^17.0.2",
     "tslib": "^2.3.1"

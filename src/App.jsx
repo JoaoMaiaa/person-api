@@ -18,7 +18,10 @@ function App() {
   }
 
   return (
+
     <Fragment>
+    {console.log(film)}
+
       <div>
         <Navbar />
       </div>
@@ -55,7 +58,7 @@ function App() {
         <div className="columns">
           <div className="column">
             <section className="section hero has-background-black">
-              <h2 className="h2 title has-text-grey-light has-text-centered">O que fazemos?</h2>
+              <h2 className="h2 title has-text-grey-light has-text-centered has-text-light">O que fazemos?</h2>
             </section>
           </div>
         </div>
@@ -143,6 +146,20 @@ function App() {
               <img src={job} style={{ height: 48.5 + '%' }} alt="" srcset="" />
               <img src={startup} style={{ height: 48.5 + '%' }} className="mt-4" alt="" srcset="" />            
             </div>
+          </div>
+        </div>
+      </section>
+      <section className="section">
+        <h2 className="h2 subtitle is-size-3 has-text-black">Nossa equipe</h2>
+        <div className="columns">          
+          <div className="column">
+            
+          </div>
+          <div className="column">
+            
+          </div>
+          <div className="column">
+            
           </div>
         </div>
       </section>
