@@ -3,6 +3,9 @@ import api from './services/api'
 import Navbar from './components/navbar'
 import job from '../assets/images/job.jpg'
 import startup from '../assets/images/startup.jpg'
+import person1 from '../assets/images/artista-1.png'
+import person2 from '../assets/images/artista-2.png'
+import person3 from '../assets/images/artista-3.png'
 
 function App() {
   const [film, setFilm] = useState([])
@@ -31,7 +34,7 @@ function App() {
             <div className="container">
               <section className="section">
                 <h1 className="title is-size-2 has-text-light mt-5">Seja muito bem-vindo ao site de nossa empresa</h1>
-                <p class="subtitle is-size-6 mt-5 has-text-grey-light">Somos uma empresa que trabalha com a relação de um belo site com o seu negócio.</p>
+                <p className="subtitle is-size-6 mt-5 has-text-grey-light">Somos uma empresa que trabalha com a relação de um belo site com o seu negócio.</p>
                 <a href="#" className="button is-light">Ver mais</a>
               </section>
             </div>
@@ -47,9 +50,9 @@ function App() {
             <div className="container">
               <section className="section">
                 <h2 className="h2 is-size-3 has-text-center has-text-black">Favorecemos sua empresa</h2>
-                <p classname="mt-5">Aqui sua empresa é prioridade na exposição e credibilidade da sua empresa</p>
+                <p className="mt-5">Aqui sua empresa é prioridade na exposição e credibilidade da sua empresa</p>
               </section>
-              <section class="section mt-5 pt-5"></section>
+              <section className="section mt-5 pt-5"></section>
             </div>
           </div>
         </div>
@@ -151,15 +154,39 @@ function App() {
       </section>
       <section className="section">
         <h2 className="h2 subtitle is-size-3 has-text-black">Nossa equipe</h2>
+        <p className="mt-2">De pessoas extremamente competentes</p>
         <div className="columns">          
-          <div className="column">
-            
+          <div className="column mt-5">
+            <div className="card mt-5 has-text-centered">
+              <div className="card-header">
+                <div className="card-title mx-auto">
+                  <p className="h3 card-header-title">José</p>
+                </div>
+              </div>
+              <div className="card-content">
+                <div className="card-image">
+                  <img src={person1} alt="" className="img-fluid" />
+                </div>
+                <p>O chato</p>
+                <p>email</p>
+                <a href="#">99999-9999</a>
+              </div>
+              <div>
+                <a href="#" className="button">f</a>
+                <a href="#" className="button mx-2">f</a>
+                <a href="#" className="button">f</a>
+              </div>
+            </div>
           </div>
           <div className="column">
-            
+            <div className="card">
+              
+            </div>
           </div>
           <div className="column">
-            
+            <div className="card">
+              
+            </div>
           </div>
         </div>
       </section>
