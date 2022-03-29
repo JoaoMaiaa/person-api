@@ -2,6 +2,9 @@ import { useState, useEffect, Fragment } from 'react'
 import api from './services/api'
 import Navbar from './components/navbar'
 import job from '../assets/images/job.jpg'
+import { Twitter } from 'react-bootstrap-icons'
+import { Instagram } from 'react-bootstrap-icons'
+import { Github } from 'react-bootstrap-icons'
 import startup from '../assets/images/startup.jpg'
 import person1 from '../assets/images/artista-1.png'
 import person2 from '../assets/images/artista-2.png'
@@ -160,7 +163,7 @@ function App() {
             <div className="card mt-5 has-text-centered">
               <div className="card-header">
                 <div className="card-title mx-auto">
-                  <p className="h3 card-header-title">José</p>
+                  <p className="h3 is-size-4 card-header-title">José</p>
                 </div>
               </div>
               <div className="card-content">
@@ -168,29 +171,76 @@ function App() {
                   <img src={person1} alt="" className="img-fluid" />
                 </div>
                 <p>O chato</p>
-                <p>email</p>
-                <a href="#">99999-9999</a>
+                <p className="my-2">abc@gmail.com</p>
+                <a href="#" class="has-text-success">99999-9999</a>
               </div>
-              <div>
-                <a href="#" className="button">f</a>
-                <a href="#" className="button mx-2">f</a>
-                <a href="#" className="button">f</a>
+              <div className="pb-5">
+                <a href="#" className="button is-dark"><Instagram/></a>
+                <a href="#" className="button is-dark mx-2"><Twitter/></a>
+                <a href="#" className="button is-dark"><Github/></a>
               </div>
             </div>
           </div>
-          <div className="column">
-            <div className="card">
-              
+          <div className="column mt-5">
+            <div className="card mt-5 has-text-centered has-text-light has-background-dark">
+              <div className="card-header">
+                <div className="card-title mx-auto">
+                  <p className="h3 is-size-4 card-header-title has-text-light">José</p>
+                </div>
+              </div>
+              <div className="card-content">
+                <div className="card-image">
+                  <img src={person2} alt="" className="img-fluid" />
+                </div>
+                <p>O chato</p>
+                <p className="my-2">abc@gmail.com</p>
+                <a href="#" class="has-text-success">99999-9999</a>
+              </div>
+              <div className="pb-5">
+                <a href="#" className="button"><Instagram/></a>
+                <a href="#" className="button mx-2"><Twitter/></a>
+                <a href="#" className="button"><Github/></a>
+              </div>
             </div>
           </div>
-          <div className="column">
-            <div className="card">
-              
+          <div className="column mt-5">
+            <div className="card mt-5 has-text-centered">
+              <div className="card-header">
+                <div className="card-title mx-auto">
+                  <p className="h3 is-size-4 card-header-title">José</p>
+                </div>
+              </div>
+              <div className="card-content">
+                <div className="card-image">
+                  <img src={person3} alt="" className="img-fluid" />
+                </div>
+                <p>O chato</p>
+                <p className="my-2">abc@gmail.com</p>
+                <a href="#" class="has-text-success">99999-9999</a>
+              </div>
+              <div className="pb-5">
+                <a href="#" className="button is-dark"><Instagram/></a>
+                <a href="#" className="button is-dark mx-2"><Twitter/></a>
+                <a href="#" className="button is-dark"><Github/></a>
+              </div>
             </div>
           </div>
         </div>
       </section>
-
+      <section className="section has-background-black">
+        <div className="container">    
+          <h3 className="mx-2 is-flex-tablet is-justify-content-center is-size-4 has-text-grey-light h3 mb-4 has-text-weight-semibold">Menu</h3>
+          <ul className="is-flex-tablet is-justify-content-center">
+            <li><a className="has-text-grey-dark mx-2" href="#">Home</a></li>
+            <li><a className="has-text-grey-dark mx-2" href="#">Objetivos</a></li>
+            <li><a className="has-text-grey-dark mx-2" href="#">Pessoas</a></li>
+            <li><a className="has-text-grey-dark mx-2" href="#">Fale conosco</a></li>
+          </ul>
+        </div>
+      </section>
+      <footer className="footer has-background-black has-text-centered">
+         Site feito por <a href="#" className="has-text-center has-text-grey-light">João Maia</a>
+      </footer>
     </Fragment>
   )
 }
