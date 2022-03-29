@@ -1,9 +1,9 @@
 import React from 'react'
 
-const clickMenu = (e) =>{
+const clickMenu = (e) => {
   e.target.classList.toggle('is-active')
   activeMenu()
-} 
+}
 
 const activeMenu = () => {
   let navMenu = document.querySelector('.navbar-menu')
@@ -17,7 +17,7 @@ const Navbar = () => (
         <img src="https://bulma.io/images/bulma-logo.png" width="112" height="28" />
       </a>
 
-      <a role="button" onClick={(e)=>clickMenu(e)} className="navbar-burger" aria-label="menu" aria-expanded="false" data-target="navbarBasicExample">
+      <a role="button" onClick={(e) => clickMenu(e)} className="navbar-burger" aria-label="menu" aria-expanded="false" data-target="navbarBasicExample">
         <span aria-hidden="true"></span>
         <span aria-hidden="true"></span>
         <span aria-hidden="true"></span>
@@ -29,17 +29,14 @@ const Navbar = () => (
         <a className="navbar-item has-text-dark">
           Home
         </a>
-
         <a className="navbar-item has-text-dark">
-          Company
+          Objetivos
         </a>
-
         <a className="navbar-item has-text-dark">
-          Person
+          Pessoas
         </a>
-
         <a className="navbar-item has-text-dark">
-          Functional
+          Fale conosco
         </a>
       </div>
     </div>
