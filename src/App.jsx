@@ -9,24 +9,23 @@ import person2 from '../assets/images/artista-2.png'
 import person3 from '../assets/images/artista-3.png'
 
 function App() {
-  const [film, setFilm] = useState([])
+  const [last, setLast] = useState([])
 
   useEffect(() => {
-    getFilm()
+    getPeople()
   }, [])
 
-  let resultLast = film.slice(-3)
-  let person = [person1, person2, person3]
-
-  async function getFilm() {
+  async function getPeople() {
     // response.data
     let { data } = await api.get('/')
-    setFilm(data)
+    let resultLast = data.slice(-3)
+    setLast(resultLast)
   }
 
   return (
 
     <Fragment>
+
       <div>
         <Navbar />
       </div>
@@ -160,7 +159,7 @@ function App() {
         <h2 className="h2 subtitle is-size-3 has-text-black">Nossa equipe</h2>
         <p className="mt-2">De pessoas extremamente competentes</p>
         <div className="columns">
-          {resultLast.map(e => (
+          {last.map(e => (
             <div className="column mt-5">
               <div className="card mt-5 has-text-centered">
                 <div className="card-header">
@@ -170,7 +169,7 @@ function App() {
                 </div>
                 <div className="card-content">
                   <div className="card-image">
-                    <img src={ } alt="" className="img-fluid" />
+                    <img src={person1} alt="" className="img-fluid" />
                   </div>
                   <p>{e.username}</p>
                   <a href="#" className="my-2 is-block has-text-dark">{e.website}</a>
