@@ -15,6 +15,9 @@ function App() {
     getFilm()
   }, [])
 
+  let resultLast = film.slice(-3)
+  let person = [person1, person2, person3]
+
   async function getFilm() {
     // response.data
     let { data } = await api.get('/')
@@ -24,8 +27,6 @@ function App() {
   return (
 
     <Fragment>
-      {console.log(film)}
-
       <div>
         <Navbar />
       </div>
@@ -41,7 +42,7 @@ function App() {
             </div>
           </div>
           <div className="column p-0 is-hidden-mobile is-flex-tablet">
-            <img src={job} alt="" srcset="" class="img-fluid" />
+            <img src={job} alt="" srcSet="" className="img-fluid" />
           </div>
         </div>
       </section>
@@ -149,8 +150,8 @@ function App() {
           </div>
           <div className="column p-0 is-hidden-mobile is-flex-tablet">
             <div className="container">
-              <img src={job} style={{ height: 48.5 + '%' }} alt="" srcset="" />
-              <img src={startup} style={{ height: 48.5 + '%' }} className="mt-4" alt="" srcset="" />
+              <img src={job} style={{ height: 48.5 + '%' }} alt="" srcSet="" />
+              <img src={startup} style={{ height: 48.5 + '%' }} className="mt-4" alt="" srcSet="" />
             </div>
           </div>
         </div>
@@ -159,72 +160,30 @@ function App() {
         <h2 className="h2 subtitle is-size-3 has-text-black">Nossa equipe</h2>
         <p className="mt-2">De pessoas extremamente competentes</p>
         <div className="columns">
-          <div className="column mt-5">
-            <div className="card mt-5 has-text-centered">
-              <div className="card-header">
-                <div className="card-title mx-auto">
-                  <p className="h3 is-size-4 card-header-title">José</p>
+          {resultLast.map(e => (
+            <div className="column mt-5">
+              <div className="card mt-5 has-text-centered">
+                <div className="card-header">
+                  <div className="card-title mx-auto">
+                    <p className="h3 is-size-4 card-header-title">{e.name}</p>
+                  </div>
                 </div>
-              </div>
-              <div className="card-content">
-                <div className="card-image">
-                  <img src={person1} alt="" className="img-fluid" />
+                <div className="card-content">
+                  <div className="card-image">
+                    <img src={ } alt="" className="img-fluid" />
+                  </div>
+                  <p>{e.username}</p>
+                  <a href="#" className="my-2 is-block has-text-dark">{e.website}</a>
+                  <a href="#" className="has-text-dark">{e.phone}</a>
                 </div>
-                <p>O chato</p>
-                <a href="#" className="my-2 is-block has-text-dark">sitedojosé.com</a>
-                <a href="#" className="has-text-dark">99999-9999</a>
-              </div>
-              <div className="pb-5">
-                <a href="#" className="button is-dark"><Instagram /></a>
-                <a href="#" className="button is-dark mx-2"><Twitter /></a>
-                <a href="#" className="button is-dark"><Github /></a>
+                <div className="pb-5">
+                  <a href="#" className="button is-dark"><Instagram /></a>
+                  <a href="#" className="button is-dark mx-2"><Twitter /></a>
+                  <a href="#" className="button is-dark"><Github /></a>
+                </div>
               </div>
             </div>
-          </div>
-          <div className="column mt-5">
-            <div className="card mt-5 has-text-centered has-text-light has-background-dark">
-              <div className="card-header">
-                <div className="card-title mx-auto">
-                  <p className="h3 is-size-4 card-header-title has-text-light">José</p>
-                </div>
-              </div>
-              <div className="card-content">
-                <div className="card-image">
-                  <img src={person2} alt="" className="img-fluid" />
-                </div>
-                <p>O chato</p>
-                <a href="#" className="my-2 has-text-light is-block">sitedojosé.com</a>
-                <a href="#" className="has-text-light">99999-9999</a>
-              </div>
-              <div className="pb-5">
-                <a href="#" className="button"><Instagram /></a>
-                <a href="#" className="button mx-2"><Twitter /></a>
-                <a href="#" className="button"><Github /></a>
-              </div>
-            </div>
-          </div>
-          <div className="column mt-5">
-            <div className="card mt-5 has-text-centered">
-              <div className="card-header">
-                <div className="card-title mx-auto">
-                  <p className="h3 is-size-4 card-header-title">José</p>
-                </div>
-              </div>
-              <div className="card-content">
-                <div className="card-image">
-                  <img src={person3} alt="" className="img-fluid" />
-                </div>
-                <p>O chato</p>
-                <a href="#" className="my-2 has-text-dark is-block">sitedojosé.com</a>
-                <a href="#" className="has-text-dark">99999-9999</a>
-              </div>
-              <div className="pb-5">
-                <a href="#" className="button is-dark"><Instagram /></a>
-                <a href="#" className="button is-dark mx-2"><Twitter /></a>
-                <a href="#" className="button is-dark"><Github /></a>
-              </div>
-            </div>
-          </div>
+          ))}
         </div>
       </section>
       <section className="section">
