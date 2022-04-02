@@ -6,4 +6,6 @@ Desenvolvendo um site básico consumindo uma api pública com informações bás
 
 Site desenvolvido pensado em mobile friendly 
 
-![screencapture-localhost-3000-2022-04-02-10_48_38](https://user-images.githubusercontent.com/75868950/161386321-84302514-44a9-4a4a-965e-94ee8139d065.jpg)
+<p class="center">
+  ![screencapture-localhost-3000-2022-04-02-10_48_38](https://user-images.githubusercontent.com/75868950/161386321-84302514-44a9-4a4a-965e-94ee8139d065.jpg)
+</p>
